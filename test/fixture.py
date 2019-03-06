@@ -5,6 +5,7 @@ import logging.config
 
 from allure_commons.types import AttachmentType
 
+from config import dictLogConfig, file_name
 from httpbin import HttpBin
 
 
@@ -18,30 +19,7 @@ async def prepare_for_test():
 
 @pytest.fixture(scope="function")
 def logger():
-    file_name = "tests.log"
-    dictLogConfig = {
-        "version": 1,
-        "handlers": {
-            "fileHandler": {
-                "class": "logging.FileHandler",
-                "formatter": "myFormatter",
-                "filename": file_name
-            }
-        },
-        "loggers": {
-            "test": {
-                "handlers": ["fileHandler"],
-                "level": "INFO",
-            }
-        },
-        "formatters": {
-            "myFormatter": {
-                "format": "%(asctime)s - %(levelname)s - %(message)s"
-            }
-        }
-    }
-
     logging.config.dictConfig(dictLogConfig)
     logger = logging.getLogger("test")
-    allure.attach.file("./" + file_name, 'LOG')
+    allure.attach.file(file_name, 'LOG')
     return logger

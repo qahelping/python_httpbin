@@ -4,9 +4,7 @@ from aiohttp import ClientSession
 
 from dataclasses import dataclass, field
 
-
-ACCEPT = "text/plain"
-CONFIG = "https://httpbin.org/"
+from config import CONFIG, ACCEPT
 
 
 @dataclass

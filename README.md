@@ -26,3 +26,5 @@
 2. Возможность настраивать глобальное логгирование при запуске тестов (например, с помощью https://docs.python.org/3/library/logging.config.html#configuration-dictionary-schema).
 
 3. Возможность собрать документацию по автотестам.
+
+
