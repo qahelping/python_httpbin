@@ -1,0 +1,7 @@
+aiohttp
+allure-behave
+allure-pytest
+async-timeout
+pytest
+ujson
+asyncio

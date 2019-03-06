@@ -1,0 +1,9 @@
+2019-03-06 03:43:59,969 - INFO - <ClientResponse(https://httpbin.org/get) [200 OK]>
+<CIMultiDictProxy('Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Origin': '*', 'Content-Encoding': 'gzip', 'Content-Type': 'application/json', 'Date': 'Wed, 06 Mar 2019 00:43:59 GMT', 'Server': 'nginx', 'Content-Length': '187', 'Connection': 'keep-alive')>
+
+2019-03-06 03:44:18,603 - INFO - <ClientResponse(https://httpbin.org/get) [200 OK]>
+<CIMultiDictProxy('Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Origin': '*', 'Content-Encoding': 'gzip', 'Content-Type': 'application/json', 'Date': 'Wed, 06 Mar 2019 00:44:18 GMT', 'Server': 'nginx', 'Content-Length': '187', 'Connection': 'keep-alive')>
+
+2019-03-06 03:51:02,779 - INFO - <ClientResponse(https://httpbin.org/get) [200 OK]>
+<CIMultiDictProxy('Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Origin': '*', 'Content-Encoding': 'gzip', 'Content-Type': 'application/json', 'Date': 'Wed, 06 Mar 2019 00:51:02 GMT', 'Server': 'nginx', 'Content-Length': '187', 'Connection': 'keep-alive')>
+
