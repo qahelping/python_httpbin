@@ -6,17 +6,17 @@ import pytest
 
 @pytest.mark.asyncio
 @allure.feature("Testing status")
-@pytest.mark.parametrize("code", [200, 300, 400, 500])
-async def test_status(code, prepare_for_test, logger):
+@pytest.mark.parametrize("status", [200, 300, 400, 500])
+async def test_status(status, prepare_for_test, logger):
     """
     Test endpoint /status/:code.
-    :param code: code
+    :param status: status
     :param prepare_for_test: fixture create session
     :param logger: fixture logging
     """
     httpbin = prepare_for_test
-    with allure.step("Get status " + str(code)):
-        response = await httpbin.get_status(str(code))
+    with allure.step("Get status " + str(status)):
+        response = await httpbin.get_status(str(status))
         logger.info(response)
-        assert response.status == code
+        assert response.status == status
         await httpbin.close()
