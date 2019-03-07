@@ -8,7 +8,7 @@ import pytest
 @allure.feature("Testing headers")
 async def test_headers(prepare_for_test, logger):
     """
-    Test endpoint /response-headers
+    Test endpoint /response-headers.
     :param prepare_for_test:
     :param logger:
     """

@@ -12,7 +12,7 @@ from httpbin import HttpBin
 @pytest.mark.asyncio
 async def prepare_for_test():
     """
-    Fixture for create and close user session
+    Fixture for create and close user session.
     """
     httpbin = HttpBin()
     yield httpbin
@@ -22,7 +22,7 @@ async def prepare_for_test():
 @pytest.fixture(scope="function")
 def logger():
     """
-    Fixture for logging in tests.log and allure
+    Fixture for logging in tests.log and allure.
     """
     logging.config.dictConfig(dict_log_config)
     logger = logging.getLogger("test")

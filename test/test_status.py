@@ -9,7 +9,7 @@ import pytest
 @pytest.mark.parametrize("code", [200, 300, 400, 500])
 async def test_status(code, prepare_for_test, logger):
     """
-    Test endpoint /status/:code
+    Test endpoint /status/:code.
     :param code: code
     :param prepare_for_test:
     :param logger:

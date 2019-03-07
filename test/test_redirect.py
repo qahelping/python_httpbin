@@ -10,7 +10,7 @@ from config import redirect_url
 @allure.feature("Testing redirect")
 async def test_redirect(prepare_for_test, logger):
     """
-    Test endpoint /redirect/:n
+    Test endpoint /redirect/:n.
     :param prepare_for_test:
     :param logger:
     """

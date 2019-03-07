@@ -12,7 +12,7 @@ class HttpBin:
 
     async def get_status(self, status: str):
         """
-        Get specific status
+        Get specific status.
         :param status: code
         :return: response
         """
