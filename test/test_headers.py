@@ -9,8 +9,8 @@ import pytest
 async def test_headers(prepare_for_test, logger):
     """
     Test endpoint /response-headers.
-    :param prepare_for_test:
-    :param logger:
+    :param prepare_for_test: fixture create session
+    :param logger: fixture logging
     """
     freeform = "application/json"
     httpbin = prepare_for_test

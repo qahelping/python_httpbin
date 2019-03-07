@@ -11,8 +11,8 @@ from config import redirect_url
 async def test_redirect(prepare_for_test, logger):
     """
     Test endpoint /redirect/:n.
-    :param prepare_for_test:
-    :param logger:
+    :param prepare_for_test: fixture create session
+    :param logger: fixture logging
     """
     redirect_number = 5
     httpbin = prepare_for_test

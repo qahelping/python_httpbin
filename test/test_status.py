@@ -11,9 +11,8 @@ async def test_status(code, prepare_for_test, logger):
     """
     Test endpoint /status/:code.
     :param code: code
-    :param prepare_for_test:
-    :param logger:
-    :return:
+    :param prepare_for_test: fixture create session
+    :param logger: fixture logging
     """
     httpbin = prepare_for_test
     with allure.step("Get status " + str(code)):
