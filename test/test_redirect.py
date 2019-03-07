@@ -1,7 +1,6 @@
 from test.fixture import logger, prepare_for_test
 import allure
 import pytest
-
 from config import redirect_url
 
 

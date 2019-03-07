@@ -2,7 +2,6 @@ import logging
 import logging.config
 import allure
 import pytest
-
 from config import dict_log_config, file_name_for_logging
 from httpbin import HttpBin
 
@@ -21,7 +20,7 @@ async def prepare_for_test():
 @pytest.fixture(scope="function")
 def logger():
     """
-    Fixture for logging in tests.log and allure.
+    Fixture for logging.
     """
     logging.config.dictConfig(dict_log_config)
     logger = logging.getLogger("test")
