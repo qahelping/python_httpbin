@@ -1,12 +1,19 @@
+from test.fixture import logger, prepare_for_test
+
 import allure
 import pytest
 
 from config import redirect_url
-from test.fixture import prepare_for_test, logger
+
 
 @pytest.mark.asyncio
 @allure.feature("Testing redirect")
 async def test_redirect(prepare_for_test, logger):
+    """
+    Test endpoint /redirect/:n
+    :param prepare_for_test:
+    :param logger:
+    """
     redirect_number = 5
     httpbin = prepare_for_test
     with allure.step("Redirect"):

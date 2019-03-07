@@ -24,5 +24,3 @@
 1. Возможность собирать allure отчёт (allure-pytest-adaptor или allure-pytest). Отдельный плюс за отчёт с логами.
 2. Возможность настраивать глобальное логгирование при запуске тестов (например, с помощью https://docs.python.org/3/library/logging.config.html#configuration-dictionary-schema).
 3. Возможность собрать документацию по автотестам.
-
-

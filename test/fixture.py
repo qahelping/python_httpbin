@@ -1,17 +1,19 @@
-import allure
-import pytest
 import logging
 import logging.config
 
-from allure_commons.types import AttachmentType
+import allure
+import pytest
 
-from config import dictLogConfig, file_name
+from config import dict_log_config, file_name_for_logging
 from httpbin import HttpBin
 
 
 @pytest.fixture(scope="function")
 @pytest.mark.asyncio
 async def prepare_for_test():
+    """
+    Fixture for create and close user session
+    """
     httpbin = HttpBin()
     yield httpbin
     await httpbin.close()
@@ -19,7 +21,10 @@ async def prepare_for_test():
 
 @pytest.fixture(scope="function")
 def logger():
-    logging.config.dictConfig(dictLogConfig)
+    """
+    Fixture for logging in tests.log and allure
+    """
+    logging.config.dictConfig(dict_log_config)
     logger = logging.getLogger("test")
-    allure.attach.file(file_name, 'LOG')
+    allure.attach.file(file_name_for_logging, 'LOG')
     return logger

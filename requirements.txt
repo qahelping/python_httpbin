@@ -1,7 +1,6 @@
-aiohttp
-allure-behave
-allure-pytest
-async-timeout
-pytest
-ujson
-asyncio
+aiohttp==3.5.4
+asyncio==3.4.3
+allure-pytest==2.5.4
+async-timeout==3.0.1
+pytest==4.1.1
+ujson==1.35
