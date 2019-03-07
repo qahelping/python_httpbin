@@ -1,7 +1,5 @@
 from urllib.parse import urljoin
-
 from aiohttp import ClientSession
-
 from config import HEADERS_ACCEPT_TEXT, HOST_URL
 from dataclasses import dataclass, field
 
