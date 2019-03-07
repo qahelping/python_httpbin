@@ -69,3 +69,21 @@
 2019-03-07 16:41:00,136 - INFO - <ClientResponse(https://httpbin.org/status/500) [500 INTERNAL SERVER ERROR]>
 <CIMultiDictProxy('Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Origin': '*', 'Content-Type': 'text/html; charset=utf-8', 'Date': 'Thu, 07 Mar 2019 13:40:59 GMT', 'Server': 'nginx', 'Content-Length': '0', 'Connection': 'keep-alive')>
 
+2019-03-07 16:52:29,089 - INFO - <ClientResponse(https://httpbin.org/response-headers?freeform=application/json) [200 OK]>
+<CIMultiDictProxy('Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Origin': '*', 'Content-Encoding': 'gzip', 'Content-Type': 'application/json', 'Date': 'Thu, 07 Mar 2019 13:52:28 GMT', 'freeform': 'application/json', 'Server': 'nginx', 'Content-Length': '88', 'Connection': 'keep-alive')>
+
+2019-03-07 16:52:30,824 - INFO - <ClientResponse(https://httpbin.org/get) [200 OK]>
+<CIMultiDictProxy('Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Origin': '*', 'Content-Encoding': 'gzip', 'Content-Type': 'application/json', 'Date': 'Thu, 07 Mar 2019 13:52:30 GMT', 'Server': 'nginx', 'Content-Length': '191', 'Connection': 'keep-alive')>
+
+2019-03-07 16:52:31,644 - INFO - <ClientResponse(https://httpbin.org/status/200) [200 OK]>
+<CIMultiDictProxy('Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Origin': '*', 'Content-Type': 'text/html; charset=utf-8', 'Date': 'Thu, 07 Mar 2019 13:52:31 GMT', 'Server': 'nginx', 'Content-Length': '0', 'Connection': 'keep-alive')>
+
+2019-03-07 16:52:32,312 - INFO - <ClientResponse(https://httpbin.org/status/300) [300 MULTIPLE CHOICES]>
+<CIMultiDictProxy('Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Origin': '*', 'Content-Type': 'text/html; charset=utf-8', 'Date': 'Thu, 07 Mar 2019 13:52:32 GMT', 'Server': 'nginx', 'Content-Length': '0', 'Connection': 'keep-alive')>
+
+2019-03-07 16:52:33,000 - INFO - <ClientResponse(https://httpbin.org/status/400) [400 BAD REQUEST]>
+<CIMultiDictProxy('Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Origin': '*', 'Content-Type': 'text/html; charset=utf-8', 'Date': 'Thu, 07 Mar 2019 13:52:32 GMT', 'Server': 'nginx', 'Content-Length': '0', 'Connection': 'keep-alive')>
+
+2019-03-07 16:52:33,794 - INFO - <ClientResponse(https://httpbin.org/status/500) [500 INTERNAL SERVER ERROR]>
+<CIMultiDictProxy('Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Origin': '*', 'Content-Type': 'text/html; charset=utf-8', 'Date': 'Thu, 07 Mar 2019 13:52:33 GMT', 'Server': 'nginx', 'Content-Length': '0', 'Connection': 'keep-alive')>
+
