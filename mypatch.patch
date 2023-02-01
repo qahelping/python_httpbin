@@ -1,0 +1,36 @@
+diff --git a/test/test_first_example.py b/test/test_first_example.py
+index ac8377b..bafd0b5 100644
+--- a/test/test_first_example.py
++++ b/test/test_first_example.py
+@@ -21,3 +21,30 @@ async def test_first_example():
+ async def test_first_example():
+     with allure.step("First example"):
+         assert 1 + 2 == 3
++
++
++@pytest.mark.asyncio
++@allure.feature("First example")
++async def test_first_example():
++    with allure.step("First example"):
++        assert 1 + 2 == 3
++
++
++@pytest.mark.asyncio
++@allure.feature("First example")
++async def test_first_example():
++    with allure.step("First example"):
++        assert 1 + 2 == 3
++
++
++@pytest.mark.asyncio
++@allure.feature("First example")
++async def test_first_example():
++    with allure.step("First example"):
++        assert 1 + 2 == 3\
++
++@pytest.mark.asyncio
++@allure.feature("First example")
++async def test_first_example():
++    with allure.step("First example"):
++        assert 1 + 2 == 3
+\ No newline at end of file
